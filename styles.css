@@ -120,7 +120,7 @@ input,select,textarea{min-width:0;max-width:100%}
   .site-header .desktop-nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;padding:12px 24px 24px;background:#fffdf8;border-bottom:1px solid var(--line);box-shadow:0 16px 24px #17372312;max-height:calc(100dvh - 72px);overflow-y:auto}
   .site-header.menu-open .desktop-nav{display:flex}
   .site-header .desktop-nav a{display:flex;align-items:center;justify-content:space-between;min-height:56px;padding:16px 0;border-bottom:1px solid var(--line);font-size:12px;letter-spacing:.12em}
-  .site-header .desktop-nav a::after{content:'↗';position:static;width:auto;height:auto;background:none;transform:none;font-size:18px}
+  .site-header .desktop-nav a::after{content:none}
   .site-header .desktop-nav a:last-child{border-bottom:0}
 }
 @media(prefers-reduced-motion:reduce){.menu-toggle span{transition:none}}
