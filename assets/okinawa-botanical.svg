@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="300" viewBox="0 0 420 300">
+  <!-- Original botanical and flowing-water motif inspired by bingata textiles. -->
+  <defs>
+    <g id="flower">
+      <g fill="#c77e69">
+        <path d="M0-4C-25-16-21-38-7-30 0-26 3-15 0-4Z"/>
+        <path d="M0-4C-25-16-21-38-7-30 0-26 3-15 0-4Z" transform="rotate(72)"/>
+        <path d="M0-4C-25-16-21-38-7-30 0-26 3-15 0-4Z" transform="rotate(144)"/>
+        <path d="M0-4C-25-16-21-38-7-30 0-26 3-15 0-4Z" transform="rotate(216)"/>
+        <path d="M0-4C-25-16-21-38-7-30 0-26 3-15 0-4Z" transform="rotate(288)"/>
+      </g>
+      <circle r="5" fill="#b79242"/>
+    </g>
+    <g id="leaves" fill="#647f79">
+      <path d="M0 0Q-37-7-36-36Q-9-31 0 0M0 0Q-7-37 14-49Q27-24 0 0M0 0Q20-30 42-21Q32 3 0 0"/>
+    </g>
+  </defs>
+  <g fill="none" stroke="#799da6" stroke-width="2.2">
+    <path d="M-30 217C21 179 109 191 109 222S21 249 21 223 82 204 82 221 44 236 44 223M278 73C324 40 435 52 443 87M284 84C331 59 411 64 424 88M301 95C337 77 389 77 401 91"/>
+    <path d="M118 278C170 255 236 286 292 266S386 243 449 261M104 289C167 268 231 298 293 278S389 257 446 273"/>
+  </g>
+  <g fill="none" stroke="#647f79" stroke-width="2">
+    <path d="M35 133Q83 110 133 39M242 239Q282 191 357 157"/>
+  </g>
+  <use href="#leaves" transform="translate(78 105) rotate(-18) scale(.8)"/>
+  <use href="#leaves" transform="translate(125 53) rotate(32) scale(.6)"/>
+  <use href="#leaves" transform="translate(291 194) rotate(8) scale(.85)"/>
+  <use href="#flower" transform="translate(65 79) rotate(-20)"/>
+  <use href="#flower" transform="translate(119 124) scale(.7)"/>
+  <use href="#flower" transform="translate(324 169) rotate(24)"/>
+  <g fill="#526f90">
+    <path d="M177 153Q150 120 155 98Q179 119 177 153M181 154Q177 112 193 95Q204 126 181 154M186 158Q204 123 226 122Q220 147 186 158"/>
+    <path d="M364 28Q344 9 350-8Q368 3 364 28M370 30Q372 5 388 0Q392 20 370 30"/>
+  </g>
+</svg>
