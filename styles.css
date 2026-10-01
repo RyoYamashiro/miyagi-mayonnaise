@@ -220,7 +220,33 @@ html:lang(ja) .event p,
 html:lang(ja) .contact-heading>p:last-child,
 html:lang(ja) .slots-note{white-space:pre-line;line-break:strict;overflow-wrap:normal}
 .hero-detail,.flavor-description,.contact-heading>p:last-child{text-wrap:pretty}
-.flavor-content .allergen-info{display:flex;flex-wrap:wrap;gap:4px 12px;max-width:280px;margin:22px 0 0;padding-top:13px;border-top:1px solid currentColor;font-size:12px;line-height:1.6}
-.allergen-info span{font-weight:400}
-.allergen-info strong{font-weight:600}
-@media(max-width:700px){.contact-heading>p:last-child br{display:initial}.flavor-content .allergen-info{max-width:none;margin-top:20px}}
+.flavor-content .serving-suggestion{display:flex;flex-wrap:wrap;gap:4px 12px;max-width:280px;margin:22px 0 0;padding-top:13px;border-top:1px solid currentColor;font-size:12px;line-height:1.6}
+.serving-suggestion span{font-weight:400}
+.serving-suggestion strong{font-weight:600}
+@media(max-width:700px){.contact-heading>p:last-child br{display:initial}.flavor-content .serving-suggestion{max-width:none;margin-top:20px}}
+
+/* Shared English product descriptor beneath the hero headline. */
+.hero-product-name{font-family:Georgia,serif;font-size:clamp(14px,1.4vw,21px);font-weight:600;line-height:1.5;letter-spacing:.08em;color:var(--forest);margin:0 0 24px;text-wrap:balance}
+@media(max-width:700px){.hero-product-name{font-size:14px;letter-spacing:.06em;margin-bottom:22px}}
+
+
+/* Compact company footer with generous outer gutters. */
+:root{--footer-gutter:clamp(28px,6vw,112px)}
+.site-footer{max-width:1440px;width:calc(100% - 2 * var(--footer-gutter));margin-inline:auto;display:block;padding:26px 0;font-size:12px}
+.footer-content{display:flex;align-items:center;justify-content:flex-start;gap:32px;width:fit-content;max-width:100%;margin-left:0;margin-right:auto;text-align:left}
+.footer-identity{display:flex;align-items:center;gap:24px;min-width:0}
+.footer-brand{display:grid;gap:8px;flex:0 0 auto}.footer-brand .brand-logo{height:54px}.footer-brand>p{font-size:11px;max-width:130px;line-height:1.5}
+.footer-company{min-width:0;font-size:12px;line-height:1.65}
+.footer-company h2{font:600 15px 'DM Sans',sans-serif;margin:0 0 6px}.footer-company address{font-style:normal;margin-bottom:4px;text-wrap:pretty}
+.footer-website{display:inline-block;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.footer-company .footer-email{margin-top:4px}.footer-email small{display:inline;color:#697569;font-size:10px;margin-left:6px}
+.footer-links{display:grid;gap:10px;flex:0 0 auto}.social-links{display:flex;gap:6px}.social-links a{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--line);border-radius:50%}.social-links a:hover{background:var(--cream)}.social-links svg{width:19px;height:19px;fill:currentColor}.footer-event{font-size:11px;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:900px){.footer-content{display:grid;gap:14px;max-width:580px}.footer-links{display:flex;align-items:center;justify-content:flex-start;gap:20px;padding-left:154px}}
+@media(max-width:700px){
+ :root{--footer-gutter:24px}
+  .site-footer{padding-block:22px;gap:14px;align-items:stretch}
+ .footer-identity{display:grid;grid-template-columns:64px minmax(0,1fr);align-items:start;gap:14px}
+ .footer-brand .brand-logo{width:64px;height:auto}.footer-brand>p{display:none}
+ .footer-company h2{font-size:14px}.footer-company{font-size:11px}.footer-email small{display:block;margin-left:0}
+ .footer-content{max-width:360px;width:100%;gap:12px}.footer-links{padding-left:78px;flex-wrap:wrap;gap:6px 16px}.footer-event{display:inline-flex;align-items:center;min-height:44px}
+}
