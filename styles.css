@@ -232,7 +232,7 @@ html:lang(ja) .slots-note{white-space:pre-line;line-break:strict;overflow-wrap:n
 
 /* Compact company footer with generous outer gutters. */
 :root{--footer-gutter:clamp(28px,6vw,112px)}
-.site-footer{max-width:1440px;width:calc(100% - 2 * var(--footer-gutter));margin-inline:auto;display:block;padding:26px 0;font-size:12px}
+.site-footer{width:100%;max-width:none;margin:0;display:block;padding:26px max(var(--footer-gutter),calc((100% - 1440px)/2));font-size:12px;background:#fff;border-top:3px solid var(--sea-glass)}
 .footer-content{display:flex;align-items:center;justify-content:flex-start;gap:32px;width:fit-content;max-width:100%;margin-left:0;margin-right:auto;text-align:left}
 .footer-identity{display:flex;align-items:center;gap:24px;min-width:0}
 .footer-brand{display:grid;gap:8px;flex:0 0 auto}.footer-brand .brand-logo{height:54px}.footer-brand>p{font-size:11px;max-width:130px;line-height:1.5}
@@ -249,4 +249,23 @@ html:lang(ja) .slots-note{white-space:pre-line;line-break:strict;overflow-wrap:n
  .footer-brand .brand-logo{width:64px;height:auto}.footer-brand>p{display:none}
  .footer-company h2{font-size:14px}.footer-company{font-size:11px}.footer-email small{display:block;margin-left:0}
  .footer-content{max-width:360px;width:100%;gap:12px}.footer-links{padding-left:78px;flex-wrap:wrap;gap:6px 16px}.footer-event{display:inline-flex;align-items:center;min-height:44px}
+}
+
+
+/* Preserve the full group portrait and intentional Japanese headline breaks. */
+.farm .farm-team-photo{object-fit:contain;object-position:center;height:auto;max-height:none;align-self:center}
+.farm-copy,.egg-story>div{min-width:0;container-type:inline-size}
+html:lang(ja) .farm h2 .heading-line,html:lang(ja) .egg-story h2 .heading-line{white-space:nowrap;overflow-wrap:normal}
+@media(min-width:1101px){
+ .farm{grid-template-columns:36% 36% 28%}
+ .farm-copy{padding:44px clamp(24px,3vw,48px)}
+ .egg-story{grid-template-columns:30% 40% 30%}
+ .egg-story>div{padding:36px clamp(24px,3vw,48px)}
+}
+@media(min-width:701px){
+ html:lang(ja) .farm h2,html:lang(ja) .egg-story h2{font-size:clamp(26px,8.6cqw,44px)}
+}
+@media(max-width:700px){
+ .farm .farm-team-photo{grid-column:1/-1;width:100%;height:auto}
+ .farm>img:last-child{grid-column:1/-1;height:auto;max-height:none}
 }
